@@ -1,0 +1,3 @@
+<import src="../../vendor/wxmlify/wxmlify.wxml" />
+<template is="wxmlify" data="{{nodes: wxmlified}}"></template>
+<view>{{text}}</view>

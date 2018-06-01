@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/newest/newest",
+    "pages/post/post",
+    "pages/selection/selection",
+    "pages/index/index",
+    "pages/addCgi/addCgi"
+  ],
+  "window": {
+    "backgroundColor": "#333",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#aaa",
+    "navigationBarTitleText": "跑文",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#eee",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/newest/newest",
+        "text": "TOP5"
+      }
+      ,{
+        "pagePath": "pages/post/post",
+        "text": "发文"
+      }
+      ,{
+        "pagePath": "pages/selection/selection",
+        "text": "精选"
+      }
+    ],
+    "position": "bottom"
+  }
+}
