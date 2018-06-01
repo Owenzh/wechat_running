@@ -1,5 +1,5 @@
-var Wxmlify = require('../../vendor/wxmlify/wxmlify.js')
-var sample = require('../../vendor/wxmlify/sample.js')
+// var Wxmlify = require('../../vendor/wxmlify/wxmlify.js')
+// var sample = require('../../vendor/wxmlify/sample.js')
 Page({
     data: {
         text: '发文'
@@ -9,6 +9,6 @@ Page({
         // var html = getHTMLStringSomehow()
 
         // new 一个 wxmlify 实例就好了
-        var wxmlify = new Wxmlify(sample.test, this, {})
+        // var wxmlify = new Wxmlify(sample.test, this, {})
     }
 })

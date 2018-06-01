@@ -1,3 +1,6 @@
-<import src="../../vendor/wxmlify/wxmlify.wxml" />
-<template is="wxmlify" data="{{nodes: wxmlified}}"></template>
-<view>{{text}}</view>
+<!-- <import src="../../vendor/wxmlify/wxmlify.wxml" />
+<template is="wxmlify" data="{{nodes: wxmlified}}"></template> -->
+<view>
+    {{text}}
+    <input type="text" placeholder="文章标题" />
+</view>
