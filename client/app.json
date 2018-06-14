@@ -1,9 +1,8 @@
 {
   "pages": [
-    "pages/newest/newest",
+    "pages/index/index",
     "pages/post/post",
     "pages/selection/selection",
-    "pages/index/index",
     "pages/addCgi/addCgi"
   ],
   "window": {
@@ -20,8 +19,8 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/newest/newest",
-        "text": "TOP5"
+        "pagePath": "pages/index/index",
+        "text": "Home"
       }
       ,{
         "pagePath": "pages/post/post",
