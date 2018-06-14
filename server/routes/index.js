@@ -36,4 +36,6 @@ router.get('/demo', controllers.demo)
 
 router.get('/article', controllers.article)
 
+router.post('/article_post', controllers.article_post)
+
 module.exports = router
