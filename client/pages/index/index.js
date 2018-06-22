@@ -304,7 +304,7 @@ Page({
         util.showBusy('请求中...')
         var that = this
         qcloud.request({
-            url: `${config.service.host}/weapp/article`,
+            url: `${config.service.host}/weapp/article_list/category/basic/top/1`,
             login: true,
             success(result) {
                 util.showSuccess('请求成功完成')

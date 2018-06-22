@@ -34,7 +34,13 @@ router.post('/message', controllers.message.post)
 
 router.get('/demo', controllers.demo)
 
-router.get('/article', controllers.article)
+router.get('/article_list', controllers.article_list)
+
+router.get('/article_list/category/:category', controllers.article_list_category)
+
+router.get('/article_list/top/:top', controllers.article_list_top)
+
+router.get('/article_list/category/:category/top/:top', controllers.article_list_category_top)
 
 router.post('/article_post', controllers.article_post)
 
