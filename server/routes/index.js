@@ -44,4 +44,6 @@ router.get('/article_list/category/:category/top/:top', controllers.article_list
 
 router.post('/article_post', controllers.article_post)
 
+router.put('/article_post', controllers.article_put)
+
 module.exports = router
