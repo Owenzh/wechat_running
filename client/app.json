@@ -1,9 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/post/post",
-    "pages/selection/selection",
-    "pages/addCgi/addCgi"
+    "pages/selection/selection"
   ],
   "window": {
     "backgroundColor": "#333",
@@ -21,10 +19,6 @@
       {
         "pagePath": "pages/index/index",
         "text": "Home"
-      }
-      ,{
-        "pagePath": "pages/post/post",
-        "text": "发文"
       }
       ,{
         "pagePath": "pages/selection/selection",
