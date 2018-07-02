@@ -5,10 +5,53 @@ var util = require('../../utils/util.js')
 
 Page({
     data: {
+        logged: false,
         requestResult: ''
     },
     onLoad: function () {
         this.getTopFive();
+    },
+    // 用户登录示例
+    bindGetUserInfo: function () {
+        if (this.data.logged) return
+
+        util.showBusy('正在登录')
+
+        const session = qcloud.Session.get()
+
+        if (session) {
+            // 第二次登录
+            // 或者本地已经有登录态
+            // 可使用本函数更新登录态
+            qcloud.loginWithCode({
+                success: res => {
+                    this.setData({
+                        userInfo: res,
+                        logged: true
+                    })
+                    util.showSuccess('登录成功')
+                },
+                fail: err => {
+                    console.error(err)
+                    util.showModel('登录错误', err.message)
+                }
+            })
+        } else {
+            // 首次登录
+            qcloud.login({
+                success: res => {
+                    this.setData({
+                        userInfo: res,
+                        logged: true
+                    })
+                    util.showSuccess('登录成功')
+                },
+                fail: err => {
+                    console.error(err)
+                    util.showModel('登录错误', err.message)
+                }
+            })
+        }
     },
     getTopFive: function () {
         util.showBusy('请求中...')
@@ -29,4 +72,14 @@ Page({
             }
         })
     },
+    viewArticle: function (event) {
+        console.log(event.currentTarget.dataset.article);
+        try {
+            wx.setStorageSync('current_article', event.currentTarget.dataset.article);
+            var detail = {
+                url: '../detail/detail'
+            };
+            wx.navigateTo(detail);
+        } catch (e) {}
+    }
 })
