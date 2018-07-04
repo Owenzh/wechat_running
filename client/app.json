@@ -13,13 +13,13 @@
   },
   "tabBar": {
     "color": "#000",
-    "selectedColor": "#eee",
+    "selectedColor": "#007AFF",
     "backgroundColor": "#fff",
     "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "Home"
+        "text": "最新"
       }
       ,{
         "pagePath": "pages/selection/selection",
