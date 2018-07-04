@@ -2,7 +2,7 @@
 var qcloud = require('../../vendor/wafer2-client-sdk/index')
 var config = require('../../config')
 var util = require('../../utils/util.js')
-
+var moment = require('../../vendor/moment/moment.js');
 Page({
     data: {
         logged: false,
@@ -61,9 +61,14 @@ Page({
             login: true,
             success(result) {
                 util.showSuccess('请求成功完成')
-                console.log(result.data);
+                var article_five = result.data.data.res;
+                for (var i = 0, len = article_five.length; i < len; i++) {
+                    var dataIns = new Date(article_five[i].creatts);
+                    article_five[i].creatts = moment(dataIns).format('YYYY-MM-DD HH:mm');
+                }
+                // console.log(result.data);
                 that.setData({
-                    requestResult: result.data.data.res
+                    requestResult: article_five
                 })
             },
             fail(error) {
@@ -72,8 +77,8 @@ Page({
             }
         })
     },
+
     viewArticle: function (event) {
-        console.log(event.currentTarget.dataset.article);
         try {
             wx.setStorageSync('current_article', event.currentTarget.dataset.article);
             var detail = {

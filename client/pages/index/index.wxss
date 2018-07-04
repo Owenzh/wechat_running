@@ -1,4 +1,50 @@
 /**index.wxss**/
+
+.page_title {
+    text-align: center;
+    font-size: 1.2em;
+    text-shadow: 1px 2px 2px #888;
+}
+
+.article_item {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    background-color:  #eee;
+    border: #888 1px solid;
+    border-radius: 2px 5px 5px 30px;
+    box-shadow: 8px 8px 5px #888;
+}
+
+.article_title {
+    margin-left: 5px;
+}
+
+.article_detail {
+    width: 100%;
+    text-align: right;
+}
+
+.article_detail text {
+    margin-right: 5px;
+}
+
+.article_detail .article_ts {
+    font-size: .6em;
+    font-style: italic;
+}
+
+.article_detail .article_author {
+    display: inline-flex;
+    width: 120px;
+    font-size: .8em;
+    font-style: normal;
+}
+
+.hover_article {
+    background-color: #fff;
+    box-shadow: 12px 12px 8px #888;
+}
+
 page {
     background: #F6F6F6;
     display: flex;
@@ -6,7 +52,9 @@ page {
     justify-content: flex-start;
 }
 
-.userinfo, .uploader, .tunnel {
+.userinfo,
+.uploader,
+.tunnel {
     margin-top: 40rpx;
     height: 140rpx;
     width: 100%;
@@ -30,14 +78,15 @@ page {
 .userinfo-nickname {
     font-size: 32rpx;
     color: #007AFF;
-    background-color: white; 
+    background-color: white;
 }
 
 .userinfo-nickname::after {
-  border: none;
+    border: none;
 }
 
-.uploader, .tunnel {
+.uploader,
+.tunnel {
     height: auto;
     padding: 0 0 0 40rpx;
     flex-direction: column;
@@ -45,7 +94,8 @@ page {
     box-sizing: border-box;
 }
 
-.uploader-text, .tunnel-text {
+.uploader-text,
+.tunnel-text {
     width: 100%;
     line-height: 52px;
     font-size: 34rpx;

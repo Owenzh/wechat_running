@@ -1,0 +1,11 @@
+<template name="article">
+    <view data-article="{{articleData}}" bindtap="{{eventName}}" class="article_item" hover-class="hover_article">
+        <view class="article_title">
+            <text>{{articleData.title}}</text>
+        </view>
+        <view class="article_detail">
+            <text class="article_author">作者: {{articleData.author}}</text>
+            <text class="article_ts">{{articleData.creatts}}</text>
+        </view>
+    </view>
+</template>
