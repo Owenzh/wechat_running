@@ -7,13 +7,13 @@
   "window": {
     "backgroundColor": "#333",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#aaa",
+    "navigationBarBackgroundColor": "#009933",
     "navigationBarTitleText": "跑文",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "light"
   },
   "tabBar": {
     "color": "#000",
-    "selectedColor": "#007AFF",
+    "selectedColor": "#009933",
     "backgroundColor": "#fff",
     "borderStyle": "black",
     "list": [
@@ -21,13 +21,13 @@
         "pagePath": "pages/index/index",
         "text": "最新",
         "iconPath": "sources/icons/find.png",
-        "selectedIconPath": "sources/icons/find_select.png"
+        "selectedIconPath": "sources/icons/find_select_green.png"
       }
       ,{
         "pagePath": "pages/selection/selection",
         "text": "精选",
         "iconPath": "sources/icons/category.png",
-        "selectedIconPath": "sources/icons/category_select.png"
+        "selectedIconPath": "sources/icons/category_select_green.png"
       }
     ],
     "position": "bottom"
