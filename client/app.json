@@ -19,11 +19,15 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "最新"
+        "text": "最新",
+        "iconPath": "sources/icons/find.png",
+        "selectedIconPath": "sources/icons/find_select.png"
       }
       ,{
         "pagePath": "pages/selection/selection",
-        "text": "精选"
+        "text": "精选",
+        "iconPath": "sources/icons/category.png",
+        "selectedIconPath": "sources/icons/category_select.png"
       }
     ],
     "position": "bottom"
