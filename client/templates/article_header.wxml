@@ -1,0 +1,20 @@
+<template name="article_header">
+    <view class="article_header">
+        <view class="article_title">{{articleItem.title}}</view>
+        <view class="article_detail">
+            <view class="table_row">
+                <text class="table_cell">作者:</text>
+                <text class="table_cell">{{articleItem.author}}</text>
+            </view>
+            <view class="table_row">
+                <text class="table_cell">类别:</text>
+                <text class="table_cell">{{category[articleItem.category]}}</text>
+            </view>
+            <view class="table_row">
+                <text class="table_cell">时间:</text>
+                <text class="table_cell">{{articleItem.creatts}}</text>
+            </view>
+        </view>
+        <view class="clear_both"></view>
+    </view>
+</template>

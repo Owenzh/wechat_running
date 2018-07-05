@@ -36,7 +36,12 @@ var config = {
             index: 2,
             text: '跑步恢复',
             value: 'recover'
-        }]
+        }],
+        category_map: {
+            basic: '跑步入门',
+            train: '跑步训练',
+            recover: '跑步恢复'
+        }
     }
 };
 

@@ -1,2 +1,4 @@
 <import src="../../vendor/wxmlify/wxmlify.wxml" />
+<import src="../../templates/article_header.wxml" />
+<template is="article_header" data="{{articleItem: articleItem,category: category}}"></template>
 <template is="wxmlify" data="{{nodes: wxmlified}}"></template>

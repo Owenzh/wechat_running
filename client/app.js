@@ -9,5 +9,8 @@ App({
     //custome
     getCategory: function () {
         return config.view.category || [];
+    },
+    getCategoryMap: function () {
+        return config.view.category_map || {};
     }
 })
