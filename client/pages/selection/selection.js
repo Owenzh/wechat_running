@@ -51,4 +51,13 @@ Page({
       }
     })
   },
+  viewArticle: function (event) {
+    try {
+      wx.setStorageSync('current_article', event.currentTarget.dataset.article);
+      var detail = {
+        url: '../detail/detail'
+      };
+      wx.navigateTo(detail);
+    } catch (e) {}
+  }
 })
