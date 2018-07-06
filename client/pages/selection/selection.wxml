@@ -2,7 +2,7 @@
 
 <view class="container">
     <view class="swiper-tab">
-        <view wx:for="{{cate}}" wx:for-index="idx" wx:for-item="itemName" 
+        <view wx:for="{{cate}}" wx:for-index="idx" wx:for-item="itemName" wx:key="unique"
             class="swiper-tab-item {{currentTab==idx?'active':''}}"
             data-current="{{idx}}" 
             data-current-category="{{itemName}}" 
@@ -11,6 +11,6 @@
         </view>
     </view>
 </view>
-<view wx:for="{{requestResult}}" wx:for-index="idx">
+<view wx:for="{{requestResult}}" wx:for-index="idx" wx:key="unique">
     <template is="article" data="{{articleData: item,eventName: 'viewArticle' }}"></template>
 </view>

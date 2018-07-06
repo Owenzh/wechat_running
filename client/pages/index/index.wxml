@@ -10,7 +10,6 @@
     </view>
 </view>
 <view class="page_title">最新文章</view>
-<view wx:for="{{requestResult}}" wx:for-index="idx">
+<view wx:for="{{requestResult}}" wx:for-index="idx" wx:key="unique">
     <template is="article" data="{{articleData: item,eventName: 'viewArticle' }}"></template>
-    <!-- <view data-article="{{item}}" bindtap="viewArticle">{{item.title}}</view> -->
 </view>
